@@ -27,12 +27,12 @@ app.use(express.json());
 
 app.use(session({
     secret: "12342345aa",
-    resave: false,
-    saveUninitialized: true,
+    resave: false,        // prevents unnecessary session updates,
+    saveUninitialized: true, //Determine session should be saved in session store if it is new and modified
 }));
 
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.initialize());    // initialize passport authentication middleware
+app.use(passport.session());     //  express session middlware allow passport to manage session 
 
 
 

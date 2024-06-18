@@ -1,7 +1,10 @@
 import mongoose from "mongoose";
 
+
+// Maybe yo schema lay sabai kam garxa  jastai discord addd garna man lagyo vani we can simply add discordId. 
+
 const UserSchema = new mongoose.Schema({
-    googleId:String,
+    googleId:String, 
     facebookId: String,
     displayName:String, 
     email:String,
